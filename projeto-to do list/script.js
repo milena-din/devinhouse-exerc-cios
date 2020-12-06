@@ -5,7 +5,7 @@ function adicionar () {
         return;
     }
     var lista = pegaLista()
-    lista.push({ texto: texto, concluido: false }) 
+    lista.unshift({ texto: texto, concluido: false }) 
     document.getElementById("texto").value = "" 
     salvarLista(lista)
     exibirLista ()

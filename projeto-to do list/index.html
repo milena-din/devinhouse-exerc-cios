@@ -6,15 +6,25 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Icons8-Windows-8-Business-Todo-List.ico" >
-    <title >Lista de afazeres</title>
+    <title >to-do list</title>
 </head>
 <body>
     <header>
-        <h1>Lista de afazeres</h1>
+        <h1>to-do list</h1>
     </header>
-    <input placeholder="Escreva a tarefa..." id="texto" type="text">
-    <button onclick="adicionar()">Adicionar</button>
-    <button onclick="excluirTudo()">Excluir tudo</button>
-    <ul id="lista"></ul>
+    <div class="container">
+        <input placeholder="Escreva a tarefa..." id="texto" type="text">
+        <div class="botoes">
+            <button onclick="adicionar()">Adicionar</button>
+            <button onclick="excluirTudo()">Excluir tudo</button>
+        </div>
+    </div>
+    <ul id="lista">
+        <li>
+            <input type="checkbox">
+            <label>Tarefa de referencia</label>
+            <button>X</button>
+        </li>
+   </ul>
 </body>
 </html>
